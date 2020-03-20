@@ -49,6 +49,8 @@ namespace ExerciciosThreads
                         await Task.Delay(1000);
                         validacao = false;
                         break;
+                    default:
+                        continue;
                 }
                 Console.Clear();
                 Environment.Exit(0);
