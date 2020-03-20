@@ -4,7 +4,7 @@ namespace ExerciciosThreads
 {
     public class Exercicio3
     {
-        static void Exercicio2cod()
+        public static void Exercicio3cod()
         {
             Console.WriteLine("Hello World!");
         }
