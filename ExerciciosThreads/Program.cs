@@ -1,12 +1,14 @@
 ﻿using System;
 
+
+
 namespace ExerciciosThreads
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Exercicio1.Exercicio1Cod();
         }
     }
 }

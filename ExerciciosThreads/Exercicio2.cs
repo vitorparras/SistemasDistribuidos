@@ -2,9 +2,9 @@
 
 namespace ExerciciosThreads
 {
-    class Exercicio2
+    public class Exercicio2
     {
-        static void Main(string[] args)
+        static void Exercicio2cod()
         {
             Console.WriteLine("Hello World!");
         }
