@@ -7,14 +7,11 @@ namespace ExerciciosThreads
     {
         public static void Exercicio1Cod()
         {
-
             var th1 = new Thread(Crescente);
             var th2 = new Thread(Decrescente);
             Console.WriteLine("Hello World!");
             th1.Start();
             th2.Start();
-            Console.ReadKey();
-
         }
 
         private static void Crescente()
