@@ -50,12 +50,12 @@ namespace ExerciciosThreads
                         validacao = false;
                         break;
                     default:
+                        Console.Clear();
                         continue;
                 }
                 Console.Clear();
-                Environment.Exit(0);
             }
-
+            Environment.Exit(0);
         }
 
 

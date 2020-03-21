@@ -5,36 +5,51 @@ namespace ExerciciosThreads
 {
     public class Exercicio3
     {
-        public static int num, resultado, i = 0;
+        public static int num;
+        public static string resultado;
         public static void Exercicio3cod()
         {
             Console.WriteLine("Exercicio: 3 \n\n");
             Console.Write("digite o numero final do intervalo: ");
             num = Convert.ToInt32(Console.ReadLine());
-
-            var th2 = new Thread(valida1);
-            th2.Start();
-            Thread.Sleep(300);
-        }
-
-        private static void valida1()
-        {
-            for (i = 2; i <= num / 2; i++)
+            do
             {
-                var th1 = new Thread(valida2);
+                var th1 = new Thread(ValidaNumeroPrimo);
                 th1.Start();
+                Thread.Sleep(100);
+                num--;
+            } while (num >= 2);
+            var th2 = new Thread(ApresentaResultado);
+            th2.Start();
+        }
+
+        private static void ValidaNumeroPrimo()
+        {
+            var numAtual = num;
+            bool primo = true;
+            for (int i = 2; i <= (int)Math.Sqrt(numAtual); i++)
+            {
+                if (numAtual % i == 0)
+                {
+                    primo = false;
+                    break;
+                }
+            }
+            if (primo)
+            {
+                resultado += "," + numAtual;
             }
         }
-        private static void valida2()
+        private static void ApresentaResultado()
         {
-            if (num % i == 0)
+            var numeros = resultado.Split(",");
+
+            foreach (var item in numeros)
             {
-                resultado++;
+                if (string.IsNullOrEmpty(item)){ continue; }
+                Console.WriteLine($"O numero {item} é primo");
             }
-            else
-            {
-                Console.WriteLine("o numero "+ num + "é primo");
-            }
+
         }
     }
 }
