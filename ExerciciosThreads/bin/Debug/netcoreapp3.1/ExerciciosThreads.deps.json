@@ -7,14 +7,38 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "ExerciciosThreads/1.0.0": {
+        "dependencies": {
+          "ExerciciosSocketsCliente": "1.0.0",
+          "ExerciciosSocketsServidor": "1.0.0"
+        },
         "runtime": {
           "ExerciciosThreads.dll": {}
+        }
+      },
+      "ExerciciosSocketsCliente/1.0.0": {
+        "runtime": {
+          "ExerciciosSocketsCliente.dll": {}
+        }
+      },
+      "ExerciciosSocketsServidor/1.0.0": {
+        "runtime": {
+          "ExerciciosSocketsServidor.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ExerciciosThreads/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExerciciosSocketsCliente/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExerciciosSocketsServidor/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

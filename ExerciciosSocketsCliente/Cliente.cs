@@ -57,7 +57,6 @@ namespace ExerciciosSocketsCliente
             }
             catch (Exception e)
             {
-
                 Console.WriteLine("Erro: {0}", e.ToString());
             }
 

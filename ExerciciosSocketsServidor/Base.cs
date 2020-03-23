@@ -2,12 +2,26 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 
 namespace ExerciciosSocketsServidor
 {
-    public class Base
+    public class BaseServidor
     {
-        public static void BaseServidor()
+        public static void BaseServer()
+        {
+
+            var th1 = new Thread(ServerBack)
+            {
+                Name = "SERVIDOR CHAT",
+                IsBackground = true
+            };
+
+            th1.Start();
+        }
+
+
+        private static void ServerBack()
         {
             Console.OutputEncoding = Encoding.UTF8;
 
@@ -72,6 +86,9 @@ namespace ExerciciosSocketsServidor
 
             Console.ReadLine();
         }
-   
+
+
+
+
     }
 }

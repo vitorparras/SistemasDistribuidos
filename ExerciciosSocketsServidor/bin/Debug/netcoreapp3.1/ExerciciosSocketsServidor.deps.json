@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ExerciciosSocketsServidor/1.0.0": {
+        "runtime": {
+          "ExerciciosSocketsServidor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExerciciosSocketsServidor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

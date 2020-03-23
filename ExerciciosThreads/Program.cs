@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ExerciciosSocketsCliente;
+using ExerciciosSocketsServidor;
+using System;
 using System.Threading.Tasks;
 
 namespace ExerciciosThreads
@@ -45,10 +47,26 @@ namespace ExerciciosThreads
                         break;
                     case "5":
                         Console.Clear();
+                        BaseCliente.BaseClient();
+                        Console.WriteLine("Aperte qualquer tecla para voltar ao menu principal");
+                        Console.ReadKey();
+                        Console.Clear();
+                        break;
+                    case "6":
+                        Console.Clear();
+                        Console.WriteLine("Estamos iniciando o servidor em segundo plano....");
+                        BaseServidor.BaseServer();
+                        Console.WriteLine("");
+                        Console.ReadKey();
+                        Console.Clear();
+                        break;
+                    case "7":
+                        Console.Clear();
                         Console.WriteLine("Voce escolheu sair Obrigado Por Usar o Programa");
                         await Task.Delay(1000);
                         validacao = false;
                         break;
+
                     default:
                         Console.Clear();
                         continue;
@@ -62,11 +80,13 @@ namespace ExerciciosThreads
         private static void Menu()
         {
             Console.WriteLine("Digite o numero equivalente ao Exercicio que deseja executar");
-            Console.WriteLine("1 - Exercicio 1");
-            Console.WriteLine("2 - Exercicio 2");
-            Console.WriteLine("3 - Exercicio 3");
-            Console.WriteLine("4 - Exercicio 4");
-            Console.WriteLine("5 - Sair");
+            Console.WriteLine("1 - Exercicio Thread 1");
+            Console.WriteLine("2 - Exercicio Thread 2");
+            Console.WriteLine("3 - Exercicio Thread 3");
+            Console.WriteLine("4 - Exercicio Thread 4");
+            Console.WriteLine("5 - Exercicio Servidor - Iniciar cliente");
+            Console.WriteLine("6 - Exercicio Servidor - Iniciar Servidor");
+            Console.WriteLine("7 - Sair");
         }
     }
 }

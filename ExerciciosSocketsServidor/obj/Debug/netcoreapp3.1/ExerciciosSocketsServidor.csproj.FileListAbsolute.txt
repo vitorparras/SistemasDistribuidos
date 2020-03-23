@@ -1,0 +1,11 @@
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosSocketsServidor\bin\Debug\netcoreapp3.1\ExerciciosSocketsServidor.exe
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosSocketsServidor\bin\Debug\netcoreapp3.1\ExerciciosSocketsServidor.deps.json
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosSocketsServidor\bin\Debug\netcoreapp3.1\ExerciciosSocketsServidor.runtimeconfig.json
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosSocketsServidor\bin\Debug\netcoreapp3.1\ExerciciosSocketsServidor.runtimeconfig.dev.json
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosSocketsServidor\bin\Debug\netcoreapp3.1\ExerciciosSocketsServidor.dll
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosSocketsServidor\bin\Debug\netcoreapp3.1\ExerciciosSocketsServidor.pdb
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosSocketsServidor\obj\Debug\netcoreapp3.1\ExerciciosSocketsServidor.csprojAssemblyReference.cache
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosSocketsServidor\obj\Debug\netcoreapp3.1\ExerciciosSocketsServidor.AssemblyInfoInputs.cache
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosSocketsServidor\obj\Debug\netcoreapp3.1\ExerciciosSocketsServidor.AssemblyInfo.cs
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosSocketsServidor\obj\Debug\netcoreapp3.1\ExerciciosSocketsServidor.dll
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosSocketsServidor\obj\Debug\netcoreapp3.1\ExerciciosSocketsServidor.pdb

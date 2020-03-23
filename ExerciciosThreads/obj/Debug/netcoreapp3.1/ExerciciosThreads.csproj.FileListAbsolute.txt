@@ -9,3 +9,10 @@ C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistema
 C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosThreads\bin\Debug\netcoreapp3.1\ExerciciosThreads.pdb
 C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosThreads\obj\Debug\netcoreapp3.1\ExerciciosThreads.dll
 C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosThreads\obj\Debug\netcoreapp3.1\ExerciciosThreads.pdb
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosThreads\bin\Debug\netcoreapp3.1\ExerciciosSocketsServidor.exe
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosThreads\bin\Debug\netcoreapp3.1\ExerciciosSocketsServidor.dll
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosThreads\bin\Debug\netcoreapp3.1\ExerciciosSocketsServidor.pdb
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosThreads\obj\Debug\netcoreapp3.1\ExerciciosThreads.csproj.CopyComplete
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosThreads\bin\Debug\netcoreapp3.1\ExerciciosSocketsCliente.exe
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosThreads\bin\Debug\netcoreapp3.1\ExerciciosSocketsCliente.dll
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\ExerciciosThreads\bin\Debug\netcoreapp3.1\ExerciciosSocketsCliente.pdb
