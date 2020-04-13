@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -7,6 +8,17 @@ namespace ExerciciosSocketsServidor
 {
     public class Servidor
     {
+
+        public static void IniciarServer()
+        {
+            var processo = new Process();
+            processo.StartInfo.UseShellExecute = false;
+            processo.StartInfo.FileName = ".\\ExerciciosThreads.exe";
+            processo.StartInfo.CreateNoWindow = true;
+            processo.Start();
+        }
+
+
         public static void Server()
         {
             //Carregar dados para liberar acesso a clientes: IP local e definição de porta a ser usada
