@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Menu.Cliente
 {
-    class Cliente
+    public class Cliente
     {
         public static void Iniciar()
         {

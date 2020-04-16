@@ -4,9 +4,6 @@ using System.Threading.Tasks;
 
 namespace Menu
 {
-    using ExerciciosSocketsCliente;
-    using ExerciciosSocketsServidor;
-    using ExerciciosThreads;
 
     class Program
     {
@@ -33,28 +30,28 @@ namespace Menu
                     {
                         case "1":
                             Console.Clear();
-                            Exercicio1.Exercicio1Cod();
+                            .E1();
                             Console.WriteLine("Aperte qualquer tecla para voltar ao menu principal");
                             Console.ReadKey();
                             Console.Clear();
                             break;
                         case "2":
                             Console.Clear();
-                            Exercicio2.Exercicio2cod();
+                            Exercicio2.E2();
                             Console.WriteLine("Aperte qualquer tecla para voltar ao menu principal");
                             Console.ReadKey();
                             Console.Clear();
                             break;
                         case "3":
                             Console.Clear();
-                            Exercicio3.Exercicio3cod();
+                            Exercicio3.E3();
                             Console.WriteLine("Aperte qualquer tecla para voltar ao menu principal");
                             Console.ReadKey();
                             Console.Clear();
                             break;
                         case "4":
                             Console.Clear();
-                            Exercicio4.Exercicio4cod();
+                            Exercicio4.E4();
                             Console.WriteLine("Aperte qualquer tecla para voltar ao menu principal");
                             Console.ReadKey();
                             Console.Clear();

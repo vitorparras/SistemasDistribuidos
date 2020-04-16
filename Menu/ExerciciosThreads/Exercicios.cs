@@ -3,10 +3,15 @@ using System.Threading;
 
 namespace Menu.ExerciciosThreads
 {
-
-    public class Exercicio1
+    public class Exercicios
     {
-        public static void Exercicio1Cod()
+        public static int cont = 0;
+        public static int num4 = 0;
+        public static int num;
+        public static string resultado;
+        public static string[] vetor = null;
+
+        public static void E1()
         {
             var th1 = new Thread(Crescente);
             var th2 = new Thread(Decrescente);
@@ -30,12 +35,10 @@ namespace Menu.ExerciciosThreads
                 Console.WriteLine("Ordem Decrescente: " + i);
             }
         }
-    }
-    public class Exercicio2
-    {
-        public static string[] vetor = null;
+    
 
-        public static void Exercicio2cod()
+
+        public static void E2()
         {
             Console.WriteLine("Digite os valores separados por virgula: ");
             var text = Console.ReadLine();
@@ -75,12 +78,9 @@ namespace Menu.ExerciciosThreads
             }
             Console.WriteLine("Resultado da Soma......: " + soma);
         }
-    }
-    public class Exercicio3
-    {
-        public static int num;
-        public static string resultado;
-        public static void Exercicio3cod()
+   
+  
+        public static void E3()
         {
             Console.WriteLine("Exercicio: 3 \n\n");
             Console.Write("digite o numero final do intervalo: ");
@@ -123,21 +123,18 @@ namespace Menu.ExerciciosThreads
             }
 
         }
-    }
-    public class Exercicio4
-    {
-        public static int cont = 0;
-        public static int num = 0;
 
-        public static void Exercicio4cod()
+
+
+        public static void E4()
         {
             Console.WriteLine("Exercicio: 4 \n\n");
             Console.Write("Digite a quantidade de vezes que deseja escrever ABC: ");
-            num = Convert.ToInt32(Console.ReadLine());
+            num4 = Convert.ToInt32(Console.ReadLine());
 
-            Thread[] th = new Thread[num];
+            Thread[] th = new Thread[num4];
 
-            while (cont < num)
+            while (cont < num4)
             {
                 th[cont] = new Thread(EscreverA);
                 th[cont].Start();
@@ -167,6 +164,6 @@ namespace Menu.ExerciciosThreads
         {
             Console.Write("C\n");
         }
-    }
 
+    }
 }

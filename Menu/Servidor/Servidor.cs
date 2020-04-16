@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Menu.Servidor
 {
-    class Servidor
+   public class Servidor
     {
 
         public static void Iniciar(bool visualizar)
