@@ -14,7 +14,7 @@ namespace Menu.Servidor
         {
             var processo = new Process();
             processo.StartInfo.UseShellExecute = true;
-            processo.StartInfo.FileName = ".\\ExerciciosThreads.exe";
+            processo.StartInfo.FileName = ".\\Menu.exe";
             processo.StartInfo.CreateNoWindow = true;
             processo.StartInfo.Arguments = visualizar ? "/s" : "/n";
             processo.Start();

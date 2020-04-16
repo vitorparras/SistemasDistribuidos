@@ -13,7 +13,7 @@ namespace Menu
 
             if (args.Contains("/s"))
             {
-                Servidor.Servidor.Iniciar(true);
+                Servidor.Servidor.Server();
             }
             else if (args.Contains("/c"))
             {
