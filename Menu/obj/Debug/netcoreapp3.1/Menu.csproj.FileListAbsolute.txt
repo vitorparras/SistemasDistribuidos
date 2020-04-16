@@ -1,3 +1,11 @@
 C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.csprojAssemblyReference.cache
 C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.AssemblyInfoInputs.cache
 C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.AssemblyInfo.cs
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\bin\Debug\netcoreapp3.1\Menu.exe
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\bin\Debug\netcoreapp3.1\Menu.deps.json
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\bin\Debug\netcoreapp3.1\Menu.runtimeconfig.json
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\bin\Debug\netcoreapp3.1\Menu.runtimeconfig.dev.json
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\bin\Debug\netcoreapp3.1\Menu.dll
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\bin\Debug\netcoreapp3.1\Menu.pdb
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.dll
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.pdb

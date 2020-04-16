@@ -13,11 +13,11 @@ namespace Menu
 
             if (args.Contains("/s"))
             {
-                 Servidor.Server();
+                Servidor.Servidor.Iniciar(true);
             }
             else if (args.Contains("/c"))
             {
-                Cliente.Client();
+                Cliente.Cliente.Client();
             }
             else
             {
@@ -30,28 +30,28 @@ namespace Menu
                     {
                         case "1":
                             Console.Clear();
-                            .E1();
+                            ExerciciosThreads.Exercicios.E1();
                             Console.WriteLine("Aperte qualquer tecla para voltar ao menu principal");
                             Console.ReadKey();
                             Console.Clear();
                             break;
                         case "2":
                             Console.Clear();
-                            Exercicio2.E2();
+                            ExerciciosThreads.Exercicios.E2();
                             Console.WriteLine("Aperte qualquer tecla para voltar ao menu principal");
                             Console.ReadKey();
                             Console.Clear();
                             break;
                         case "3":
                             Console.Clear();
-                            Exercicio3.E3();
+                            ExerciciosThreads.Exercicios.E3();
                             Console.WriteLine("Aperte qualquer tecla para voltar ao menu principal");
                             Console.ReadKey();
                             Console.Clear();
                             break;
                         case "4":
                             Console.Clear();
-                            Exercicio4.E4();
+                            ExerciciosThreads.Exercicios.E4();
                             Console.WriteLine("Aperte qualquer tecla para voltar ao menu principal");
                             Console.ReadKey();
                             Console.Clear();
@@ -59,7 +59,7 @@ namespace Menu
                         case "5":
                             Console.Clear();
                             Console.WriteLine("Iniciando Chat do cliente....");
-                            Cliente.Iniciar();
+                            Cliente.Cliente.Iniciar();
                             Task.Delay(6000);
                             Console.Clear();
                             break;
@@ -72,7 +72,7 @@ namespace Menu
                             else
                             {
                                 Console.WriteLine("Estamos iniciando o servidor em segundo plano....");
-                                Servidor.Iniciar(true);
+                                Servidor.Servidor.Iniciar(true);
                                 quantServer++;
                             }
                             Task.Delay(3000);
