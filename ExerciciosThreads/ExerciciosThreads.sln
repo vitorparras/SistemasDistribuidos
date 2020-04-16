@@ -3,13 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciciosThreads", "ExerciciosThreads.csproj", "{475AF888-64D2-46A1-8AB9-612BBAD37275}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciciosSocketsCliente", "..\ExerciciosSocketsCliente\ExerciciosSocketsCliente.csproj", "{F3EA366B-4E26-4D90-96FE-8B9E7FB8C006}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciciosSocketsServidor", "..\ExerciciosSocketsServidor\ExerciciosSocketsServidor.csproj", "{81412885-C1CA-4897-AF14-F8262AAE897C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu", "..\Menu\Menu.csproj", "{C04F6B53-064F-4F18-ACF9-4550CEFC5558}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Menu", "..\Menu\Menu.csproj", "{C04F6B53-064F-4F18-ACF9-4550CEFC5558}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,18 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{475AF888-64D2-46A1-8AB9-612BBAD37275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{475AF888-64D2-46A1-8AB9-612BBAD37275}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{475AF888-64D2-46A1-8AB9-612BBAD37275}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{475AF888-64D2-46A1-8AB9-612BBAD37275}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3EA366B-4E26-4D90-96FE-8B9E7FB8C006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3EA366B-4E26-4D90-96FE-8B9E7FB8C006}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3EA366B-4E26-4D90-96FE-8B9E7FB8C006}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3EA366B-4E26-4D90-96FE-8B9E7FB8C006}.Release|Any CPU.Build.0 = Release|Any CPU
-		{81412885-C1CA-4897-AF14-F8262AAE897C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81412885-C1CA-4897-AF14-F8262AAE897C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81412885-C1CA-4897-AF14-F8262AAE897C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81412885-C1CA-4897-AF14-F8262AAE897C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C04F6B53-064F-4F18-ACF9-4550CEFC5558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C04F6B53-064F-4F18-ACF9-4550CEFC5558}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C04F6B53-064F-4F18-ACF9-4550CEFC5558}.Release|Any CPU.ActiveCfg = Release|Any CPU

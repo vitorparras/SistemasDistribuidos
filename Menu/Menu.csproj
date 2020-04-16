@@ -5,10 +5,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ExerciciosSocketsCliente\ExerciciosSocketsCliente.csproj" />
-    <ProjectReference Include="..\ExerciciosSocketsServidor\ExerciciosSocketsServidor.csproj" />
-    <ProjectReference Include="..\ExerciciosThreads\ExerciciosThreads.csproj" />
-  </ItemGroup>
-
 </Project>
