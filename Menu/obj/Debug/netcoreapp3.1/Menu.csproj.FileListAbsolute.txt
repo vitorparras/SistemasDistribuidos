@@ -1,0 +1,3 @@
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.csprojAssemblyReference.cache
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.AssemblyInfoInputs.cache
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.AssemblyInfo.cs

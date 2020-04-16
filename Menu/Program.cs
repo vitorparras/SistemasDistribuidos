@@ -1,27 +1,26 @@
 ﻿using System;
-using System.IO;
-using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
-namespace ExerciciosThreads
+namespace Menu
 {
     using ExerciciosSocketsCliente;
     using ExerciciosSocketsServidor;
-    using System.Linq;
+    using ExerciciosThreads;
 
     class Program
     {
-        public static int quantServer = 0;
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
+            int quantServer = 0;
+
             if (args.Contains("/s"))
             {
-                BaseServidor.BaseServer();
+                Servidor.Server();
             }
             else if (args.Contains("/c"))
             {
-                BaseCliente.BaseClientAsync();
+                Cliente.Client();
             }
             else
             {
@@ -63,8 +62,8 @@ namespace ExerciciosThreads
                         case "5":
                             Console.Clear();
                             Console.WriteLine("Iniciando Chat do cliente....");
-                            BaseCliente.IniciarCliente();
-                            await Task.Delay(6000);
+                            Cliente.Iniciar();
+                            Task.Delay(6000);
                             Console.Clear();
                             break;
                         case "6":
@@ -76,22 +75,22 @@ namespace ExerciciosThreads
                             else
                             {
                                 Console.WriteLine("Estamos iniciando o servidor em segundo plano....");
-                                BaseServidor.IniciarServer();
+                                Servidor.Iniciar(true);
                                 quantServer++;
                             }
-                            await Task.Delay(3000);
+                            Task.Delay(3000);
                             Console.Clear();
                             break;
                         case "7":
                             Console.Clear();
                             Console.Write("Saindo em");
-                            await Task.Delay(300);
+                            Task.Delay(300);
                             Console.Write(" 3 ");
-                            await Task.Delay(300);
+                            Task.Delay(300);
                             Console.Write(" 2 ");
-                            await Task.Delay(300);
+                            Task.Delay(300);
                             Console.Write(" 1... ");
-                            await Task.Delay(2400);
+                            Task.Delay(2400);
                             validacao = false;
                             break;
 
@@ -106,6 +105,9 @@ namespace ExerciciosThreads
         }
 
 
+
+
+
         private static void Menu()
         {
             Console.WriteLine("Digite o numero equivalente ao Exercicio que deseja executar");
@@ -117,5 +119,6 @@ namespace ExerciciosThreads
             Console.WriteLine("6 - Exercicio CHAT - Iniciar Servidor");
             Console.WriteLine("7 - Sair");
         }
+
     }
 }

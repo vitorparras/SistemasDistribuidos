@@ -3,23 +3,22 @@ using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ExerciciosSocketsServidor
 {
     public class Servidor
     {
-
-        public static void IniciarServer()
+        public static void Iniciar(bool visualizar)
         {
             var processo = new Process();
-            processo.StartInfo.UseShellExecute = false;
+            processo.StartInfo.UseShellExecute = true;
             processo.StartInfo.FileName = ".\\ExerciciosThreads.exe";
             processo.StartInfo.CreateNoWindow = true;
+            processo.StartInfo.Arguments = visualizar ? "/s" : "/n";
             processo.Start();
         }
-
-
-        public static void Server()
+        public static  void Server()
         {
             //Carregar dados para liberar acesso a clientes: IP local e definição de porta a ser usada
             IPHostEntry ipHost = Dns.GetHostEntry(Dns.GetHostName());

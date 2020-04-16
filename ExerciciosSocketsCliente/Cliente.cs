@@ -1,12 +1,26 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ExerciciosSocketsCliente
 {
     public class Cliente
     {
+        public static void Iniciar()
+        {
+            var processo = new Process();
+            processo.StartInfo.UseShellExecute = true;
+            processo.StartInfo.FileName = ".\\ExerciciosThreads.exe";
+            processo.StartInfo.CreateNoWindow = true;
+            processo.StartInfo.Arguments = "/c";
+            processo.Start();
+        }
+
+
+
         public static void Client()
         {
             try
