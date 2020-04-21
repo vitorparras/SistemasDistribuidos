@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 
 namespace Menu.Cliente
 {
@@ -20,6 +21,7 @@ namespace Menu.Cliente
         }
         public static void Client()
         {
+
             try
             {
                 //Carregar dados para conectar ao servidor local: IP local e definição de porta a ser usada
@@ -38,28 +40,40 @@ namespace Menu.Cliente
 
                     //Exibe a mensagem caso consiga realizar a conexão
                     Console.WriteLine("Conectado ao servidor!");
+                    Console.WriteLine("");
+                    Console.Write("Digite seu nome:");
+                    var nome = Console.ReadLine();
+                    Console.Clear();
 
+                    var THRecebeMensagem = new Thread(RecebeMensagems)
+                    {
+                        IsBackground = true,
+                        Name = "THRecebeMensagem"
+                    };
+                    THRecebeMensagem.Start(sender);
+
+
+                    Console.WriteLine("##################CHAT###################");
                     while (true)
                     {
+                        // Definir mensagem para enviar ao servidor
+                        Console.Write("YOU: ");
                         var mensagem = Console.ReadLine();
-                        if (mensagem == "Sair")
+
+                        byte[] messageSent = Encoding.ASCII.GetBytes(nome + " #NOME# " + mensagem + "*");
+                        int byteSent = sender.Send(messageSent);
+
+                        if (mensagem == "exit")
                         {
                             break;
                         }
-                        // Definir mensagem para enviar ao servidor
-                        byte[] messageSent = Encoding.ASCII.GetBytes(mensagem);
-                        int byteSent = sender.Send(messageSent);
 
-                        // Data 
-                        byte[] messageReceived = new byte[1024];
-
-                        // Método receive retorna os dados enviados pelo servidor
-                        int byteRecv = sender.Receive(messageReceived);
-                        Console.WriteLine("Mensagem enviada pelo servidor: {0}", Encoding.ASCII.GetString(messageReceived, 0, byteRecv));
                     }
                     // Fechar a conexão com o servidor
                     sender.Shutdown(SocketShutdown.Both);
                     sender.Close();
+
+                    Console.ReadKey();
                 }
                 catch (Exception e)
                 {
@@ -71,7 +85,25 @@ namespace Menu.Cliente
                 Console.WriteLine("Erro: {0}", e.ToString());
             }
 
+
+
         }
+
+
+
+        public static void RecebeMensagems(object obj)
+        {
+            Socket sender = (Socket)obj;
+            while (true)
+            {
+                // Data 
+                byte[] messageReceived = new byte[1024];
+                // Método receive retorna os dados enviados pelo servidor
+                int byteRecv = sender.Receive(messageReceived);
+                Console.WriteLine(Encoding.ASCII.GetString(messageReceived, 0, byteRecv));
+            }
+        }
+
 
     }
 }

@@ -4,11 +4,13 @@ using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 
 namespace Menu.Servidor
 {
-   public class Servidor
+    public class Servidor
     {
+        public static List<Socket> ListaClientes = new List<Socket>();
 
         public static void Iniciar(bool visualizar)
         {
@@ -19,6 +21,7 @@ namespace Menu.Servidor
             processo.StartInfo.Arguments = visualizar ? "/s" : "/n";
             processo.Start();
         }
+
         public static void Server()
         {
             //Carregar dados para liberar acesso a clientes: IP local e definição de porta a ser usada
@@ -33,18 +36,70 @@ namespace Menu.Servidor
             {
                 //Libera acesso aos clientes
                 listener.Bind(localEndPoint);
-
-                // Define a quantidade de conexões ao servidor 
+                // Define a quantidade de tentativas conexões ao servidor 
                 listener.Listen(1000);
-
                 while (true)
                 {
+                    try
+                    {
+                       // Console.WriteLine("Aguardando conexões dos clientes ... ");
+                        //Aceita a conexão com o cliente 
+                        Socket clientSocket = listener.Accept();
 
-                    Console.WriteLine("Aguardando conexões dos clientes ... ");
+                        Console.WriteLine("clientes Conectado... ");
 
-                    //Aceita a conexão com o cliente 
-                    Socket clientSocket = listener.Accept();
+                        AddClienteLista(clientSocket);
+                        var THAceitarConexao = new Thread(RecebeDados)
+                        {
+                            IsBackground = true,
+                            Name = "ACEITA CONEXAO"
+                        };
+                        THAceitarConexao.Start(clientSocket);
+                    }
+                    catch { continue; }
+                }
+            }
 
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+        }
+
+        public static void EnviarMensagem(Socket clienteEnviado, String mensagem)
+        {
+
+            foreach (var cliente in ListaClientes)
+            {
+                var dataMensagem = mensagem.Split("#NOME#");
+
+                byte[] message = Encoding.ASCII.GetBytes(dataMensagem[0] + ":" + dataMensagem[1].Substring(0, dataMensagem[1].Length - 1));
+                if (cliente != clienteEnviado)
+                {
+                    //Envia resposta ao cliente
+                    cliente.Send(message);
+                }
+            }
+        }
+        public static void AddClienteLista(Socket clientSocket)
+        {
+            ListaClientes.Add(clientSocket);
+        }
+        public static void RemoveClienteLista(Socket clientSocket)
+        {
+            ListaClientes.Remove(clientSocket);
+            //Fecha a conexão com o cliente 
+            clientSocket.Shutdown(SocketShutdown.Both);
+            clientSocket.Close();
+        }
+        public static void RecebeDados(object obj)
+        {
+            Socket clientSocket = (Socket)obj;
+            try
+            {
+                while (true)
+                {
                     //Serializar os dados recebidos do servidor
                     byte[] bytes = new Byte[1024];
                     string data = null;
@@ -53,29 +108,32 @@ namespace Menu.Servidor
                     {
                         //quantidade de bytes recebidos
                         int numByte = clientSocket.Receive(bytes);
+
                         //Transformar os bytes em string
                         data += Encoding.ASCII.GetString(bytes, 0, numByte);
+
                         //Para de receber os dados do cliente assim que ler o caracter *
                         if (data.IndexOf("*") > -1)
                             break;
                     }
+                    ///teste
+                    ///
+                    Console.WriteLine(data);
 
-                    Console.WriteLine("Texto recebido: {0} ", data);
-                    byte[] message = Encoding.ASCII.GetBytes("Mensagem recebida com sucesso pelo servidor!");
-                    //Envia resposta ao cliente
-                    clientSocket.Send(message);
+                    if (data.Contains("exit"))
+                    {
+                        EnviarMensagem(clientSocket, "SAIU");
+                        RemoveClienteLista(clientSocket);
+                        break;
+                    }
 
-                    // Fecha a conexão com o cliente 
-                    clientSocket.Shutdown(SocketShutdown.Both);
-                    clientSocket.Close();
+                    EnviarMensagem(clientSocket, data);
                 }
             }
-
-            catch (Exception e)
+            catch
             {
-                Console.WriteLine(e.ToString());
+                EnviarMensagem(clientSocket, "SAIU");
             }
         }
- 
     }
 }
