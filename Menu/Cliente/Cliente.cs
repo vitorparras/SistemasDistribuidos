@@ -89,8 +89,6 @@ namespace Menu.Cliente
 
         }
 
-
-
         public static void RecebeMensagems(object obj)
         {
             Socket sender = (Socket)obj;

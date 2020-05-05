@@ -9,3 +9,5 @@ C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistema
 C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\bin\Debug\netcoreapp3.1\Menu.pdb
 C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.dll
 C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.pdb
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.csproj.CoreCompileInputs.cache
+C:\Users\vitor\OneDrive - Fatec Centro Paula Souza\escolas\fatec\termo 5\sistemas distribuidos\SistemasDistribuidos\Menu\obj\Debug\netcoreapp3.1\Menu.genruntimeconfig.cache

@@ -49,11 +49,13 @@ namespace Menu.Servidor
                         Console.WriteLine("clientes Conectado... ");
 
                         AddClienteLista(clientSocket);
+
                         var THAceitarConexao = new Thread(RecebeDados)
                         {
                             IsBackground = true,
                             Name = "ACEITA CONEXAO"
                         };
+
                         THAceitarConexao.Start(clientSocket);
                     }
                     catch { continue; }
@@ -73,8 +75,8 @@ namespace Menu.Servidor
             foreach (var cliente in ListaClientes)
             {
                 var dataMensagem = mensagem.Split("#NOME#");
-
-                byte[] message = Encoding.ASCII.GetBytes(dataMensagem[0] + ":" + dataMensagem[1].Substring(0, dataMensagem[1].Length - 1));
+                var teste = dataMensagem[0] + ":" + dataMensagem[1].Substring(0, dataMensagem[1].Length - 1);
+                byte[] message = Encoding.ASCII.GetBytes(teste);
                 if (cliente != clienteEnviado)
                 {
                     //Envia resposta ao cliente
@@ -116,8 +118,6 @@ namespace Menu.Servidor
                         if (data.IndexOf("*") > -1)
                             break;
                     }
-                    ///teste
-                    ///
                     Console.WriteLine(data);
 
                     if (data.Contains("exit"))
